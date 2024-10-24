@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quizify</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="quiz-container">
+        <header>
+            <h1>Quizify</h1>
+            <div id="timer">Time Remaining: 10:00</div>
+        </header>
+
+        <div id="userInfo">
+            <form id="userForm">
+                <h2>Enter your details to start the quiz</h2>
+                <label>Name:</label>
+                <input type="text" id="name" required>
+                <label>Roll No:</label>
+                <input type="text" id="rollNo" required>
+                <label>Branch:</label>
+                <input type="text" id="branch" required>
+                <button type="submit" class="btn">Start Quiz</button>
+            </form>
+        </div>
+
+        <div id="quizSection">
+            <aside>
+                <ul id="questionList" class="question-numbers"></ul>
+            </aside>
+
+            <section id="questionsContainer"></section>
+        </div>
+
+        <div id="userInfoDisplay" class="result-section"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
